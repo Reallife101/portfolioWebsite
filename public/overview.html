@@ -2,13 +2,14 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Megan Cheung Portfolio</title>
-		<meta name="description" content="Megan Cheung Portfolio">
+		<title>Ryan Ngoon Portfolio</title>
+		<meta name="description" content="Ryan Ngoon Portfolio">
 		<meta name="author" content="Ryan Ngoon">
-		<link rel="icon" href="img/whiteLogo3.png">
+		<link rel="icon" href="img/blackLogo.png">
 
 		<link rel="stylesheet" href="style_sheets/intro.css">
 		<link rel="stylesheet" href="style_sheets/base.css">
+		<link rel="stylesheet" href="style_sheets/style.css">
 
 	</head>
 	<body>
@@ -18,65 +19,56 @@
 
 				<!-- Side Navigation Bar -->
 				<ul>
-					<li><a class="active" href="overview.html">VISUAL DEVELOPMENT</a></li>
-					<li><a href="graphicdesign.html">GRAPHIC DESIGN</a></li>
-					<li><a href="illustrations.html">ILLUSTARATIONS</a></li>
+					<li><a class="active" href="overview.html">OVERVIEW</a></li>
+					<li><a href="graphicdesign.html">EXPERIENCE</a></li>
+					<li><a href="illustrations.html">GAMES</a></li>
 					<li><a href="resume.html">RESUME</a></li>
 					<li><a href="about.html">ABOUT</a></li>
 				</ul>
 
 
-			</div>8
+			</div>
 			<div class="right">
+	<!---- Below Hero Image --->
 
-				<h1>In Progress</h1>
-				<div class="gallery">
-					<figure class="gallery__item">
-						<img src="img/hike1.jpg" class="gallery__img" alt="Image 1" onclick="modalClick(this)">
-					</figure>
-					<figure class="gallery__item">
-					    <img src="img/hike2.jpg" class="gallery__img" alt="Image 2" onclick="modalClick(this)">
-					</figure>
-					<figure class="gallery__item">
-					    <img src="img/hike3.jpg" class="gallery__img" alt="Image 3" onclick="modalClick(this)">
-					</figure>
-					<figure class="gallery__item">
-					    <img src="img/hike4.jpg" class="gallery__img" alt="Image 4" onclick="modalClick(this)">
-					</figure>
-					<figure class="gallery__item">
-					    <img src="img/hike5.jpg" class="gallery__img" alt="Image 5" onclick="modalClick(this)">
-					</figure>
-					<figure class="gallery__item">
-					    <img src="img/hike6.jpg" class="gallery__img" alt="Image 6" onclick="modalClick(this)">
-					</figure>
+			<div class="row_index">
+
+				<div class="column_index">
+					<div class="padpadpad">
+						<div class="card">
+							<img src="img/hike1.jpg" class="slideimg" style="max-height: 450px">
+						</div>
+					</div>
 				</div>
-				<!-- The Modal -->
-				<div id="myModal" class="modal">
-				  <span class="close">&times;</span>
-				  <img class="modal-content" id="img01">
-				  <div id="caption"></div>
+				<div class="column_index">
+					<div class="padpadpad">
+						<div class="vertical-center">
+							<h1>Our Mission</h1>
+							<p style="margin-right: 150px">Our mission at Polycards presented by Team Euclid is to provide and easy, free and annonymous way for students to study at Cal Poly San Luis Obispo. As a student driven project, we do not have any goals of monetization, but are instead focussing on the project as a learning experience for ourselves while doing our best to help out our fellow student. Because of this, as a team, we inheritely value your privacy and wallet, never asking you to make an account and never charging a single cent to use our product. This project is created entirely by students, for students and we plan to make that our top priority.</p>
+						</div>
+					</div>
 				</div>
 			</div>
-
 		</div>
-		<script>
-		var modal = document.getElementById("myModal");
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
+		<div class="right_col">
+			<div class="row_index">
+				<div class="column_index">
+					<div class="padpadpad">
+						<div class="vertical-center">
+							<h1>Our Goal</h1>
+							<p style="width: 45%">Our goal is to aid student's ability to study. To that extent, we have provided a flashcard system where one can search for cards specially made for their class, professor and even section, compelte with professor verification. We also provide a way to study these flashcards, as well as creating them to be shared with classmates and friends. To that extent, we have also provided a way to contact us incase anything should go wrong with our website, and we are ready to learn and adapt the website to best aid the students here at Cal Poly San Luis Obispo.</p>
+						</div>
+					</div>
+				</div>
+				<div class="column_index">
+					<div class="padpadpad">
+						<div class="card">
+							<img src="img/hike2.jpg" class="slideimg" style="max-height: 450px">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() { 
-		  modal.style.display = "none";
-		}
-
-		function modalClick(ii) {
-			var modal = document.getElementById("myModal");
-			var modalImg = document.getElementById("img01");
-			var captionText = document.getElementById("caption");
-		  	modal.style.display = "block";
-		  	modalImg.src = ii.src;
-		  	captionText.innerHTML = ii.alt;
-		}
-		</script>
 	</body>
 </html>
