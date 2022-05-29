@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+
+		<title>Megan Cheung Portfolio</title>
+		<meta name="description" content="Megan Cheung Portfolio">
+		<meta name="author" content="Ryan Ngoon">
+		<link rel="icon" href="img/whiteLogo3.png">
+
+		<link rel="stylesheet" href="style_sheets/intro.css">
+		<link rel="stylesheet" href="style_sheets/base.css">
+		<link rel="stylesheet" href="style_sheets/illustrations.css">
+
+	</head>
+	<body>
+		<div class="container">
+			<div class="left">
+				<img class="logo" src="img/blacklogo2.png" onclick="location.href='index.html';"></img>
+
+				<!-- Side Navigation Bar -->
+				<ul>
+					<li><a href="overview.html">VISUAL DEVELOPMENT</a></li>
+					<li><a href="graphicdesign.html">GRAPHIC DESIGN</a></li>
+					<li><a class="active" href="illustrations.html">ILLUSTARATIONS</a></li>
+					<li><a href="resume.html">RESUME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+				</ul>
+
+
+			</div>
+			<div class="right" >
+				<h1>In Progress</h1>
+				<br>
+				
+				<div class="row">
+				  <div class="column">
+				    <img src="img/hike1.jpg" alt="hike 1" onclick="modalClick(this)">
+				    <img src="img/goldngreatep15.png" alt="hike 1" onclick="modalClick(this)">
+				  </div>
+				  <div class="column">
+				    <img src="img/hike4.jpg" alt="hike 1" onclick="modalClick(this)">
+				    <img src="img/hike2.jpg" alt="hike 1" onclick="modalClick(this)">
+				  </div>
+				  <div class="column">
+				  	<img src="img/kollabscramble_countdown9.jpg" alt="hike 1" onclick="modalClick(this)">
+				    <img src="img/hike5.jpg" alt="hike 1" onclick="modalClick(this)">
+				    
+				  </div>
+				  <div class="column">
+				    <img src="img/hike3.jpg" alt="hike 1" onclick="modalClick(this)">
+				    <img src="img/stamp.png" alt="hike 1" onclick="modalClick(this)">
+				  </div>
+				</div>
+
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+				  <span class="close">&times;</span>
+				  <img class="modal-content" id="img01">
+				  <div id="caption"></div>
+				</div>
+
+			</div>
+
+		</div>
+		
+		<script>
+		var modal = document.getElementById("myModal");
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() { 
+		  modal.style.display = "none";
+		}
+
+		function modalClick(ii) {
+			var modal = document.getElementById("myModal");
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+		  	modal.style.display = "block";
+		  	modalImg.src = ii.src;
+		  	captionText.innerHTML = ii.alt;
+		}
+		</script>
+
+	</body>
+</html>
